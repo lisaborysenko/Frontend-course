@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Placement</title>
+    <style>
+      /*
+      Write your CSS here
+      Gap Colour: #000
+      White: #F0F1EC
+      Red: #E72F24
+      Black: #232629
+      Blue: #004592
+      Yellow: #F9D01E
+
+      For dimensions, see dimensions.png image.
+      HINT: Remember you can't change the properties of grid lines.
+      But grid lines are transparent!
+      */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100vh;
+        display: grid;
+
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 10px 155px 20px;
+
+        /* grid-template-areas:
+          "re whit whit whit"
+          "whit whit whit blu"
+          "whit whit whit blac"
+          "whit whit whit whit"
+          "whit yello blac whit";
+        /* "whit whit whit blu"; */
+        /* "whit whit whit blac"
+          "whit whit whit whit"
+          "whit yello blac white"; */
+      }
+
+      .item {
+        /* border: solid 3px #232629; */
+      }
+
+      .red {
+        background-color: #e72f24;
+        grid-area: 1/1/2/2;
+        /* border-bottom: solid 5px #232629; */
+        border-right: solid 5px #232629;
+        /* grid-area: re; */
+      }
+      .white {
+        background-color: #f0f1ec;
+        /* grid-area: whit; */
+        grid-area: 1/2/2/5;
+      }
+      .white2 {
+        background-color: #f0f1ec;
+        /* grid-area: whit; */
+        grid-area: 2/1/5/2;
+        border: solid 5px #232629;
+        border-left: none;
+      }
+      .white3 {
+        background-color: #f0f1ec;
+        grid-area: 2/2/5/4;
+        border: solid 5px #232629;
+        border-left: none;
+      }
+      .white4 {
+        background-color: #f0f1ec;
+        border-bottom: none;
+        border-right: none;
+        grid-area: 4/4/6/5;
+      }
+      .white5 {
+        background-color: #f0f1ec;
+        border-bottom: none;
+        grid-area: 5/1/6/2;
+        border-right: solid 5px #232629;
+      }
+      .black {
+        background-color: #232629;
+        grid-area: blac;
+        grid-area: 5/3/6/4;
+      }
+      .black1 {
+        background-color: #232629;
+        grid-area: blac;
+        grid-area: 3/4/4/5;
+        border-bottom: none;
+      }
+
+      .blue {
+        background-color: #004592;
+        grid-area: blu;
+        grid-area: 2 /4/3/5;
+        border-top: solid 5px #232629;
+      }
+      .yellow {
+        background-color: #f9d01e;
+        grid-area: yello;
+        grid-area: 5 /2/6/3;
+        border-right: solid 5px #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item red"></div>
+      <div class="item yellow"></div>
+      <div class="item blue"></div>
+      <div class="item black"></div>
+      <div class="item black1"></div>
+      <div class="item white"></div>
+      <div class="item white2"></div>
+      <div class="item white3"></div>
+      <div class="item white4"></div>
+      <div class="item white5"></div>
+    </div>
+  </body>
+</html>

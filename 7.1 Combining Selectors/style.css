@@ -1,0 +1,20 @@
+/* Write your code here: */
+h1,
+h2 {
+  color: blueviolet;
+}
+
+.box > p {
+  color: blue;
+}
+
+.list li {
+  color: cadetblue;
+}
+
+li.done {
+  color: crimson;
+}
+ul p.done {
+  color: chocolate;
+}

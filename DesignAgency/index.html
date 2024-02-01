@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Media Query</title>
+    <style>
+      /* @media (min-width: 319px) and (max-width: 480px) {
+        body {
+          background-color: lightsalmon;
+        }
+      } */
+
+      /* @media (min-width: 1201px) and (max-width: 1600px) {
+        body {
+          background-color: limegreen;
+        }
+      }
+      @media (min-width: 1601px) {
+        body {
+          background-color: seagreen;
+        } */
+
+      body {
+        background-color: rgb(39, 39, 39);
+        color: rgb(198, 198, 198);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .name {
+        font-size: 100px;
+        background: linear-gradient(
+          to right,
+          #fd1d1d,
+          #fcb045,
+          rgb(97, 0, 161),
+          #500086
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+
+      .section1 {
+        color: #fcb045;
+      }
+      .box1 {
+        float: left;
+      }
+      .box2 {
+        float: right;
+      }
+      /* div {
+        display: inline-block;
+        width: 40%;
+      } */
+      .text1 {
+        position: relative;
+        left: 700px;
+      }
+      img {
+        float: left;
+        margin: 15px;
+      }
+      .section2 {
+        text-align: center;
+      }
+      .boxes {
+        display: flex;
+
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+      .boxes > * {
+        gap: 20px;
+      }
+
+      /* @media (min-width: 600px) and (max-width: 1200px) {
+        body {
+          background-color: rgb(16, 2, 61);
+        }
+        .text1 {
+          position: relative;
+          left: 120px;
+        } */
+      /* } */
+    </style>
+    <h1 class="name">Innovation Design Group</h1>
+    <h2 class="text1">Crafting the Future Through Design</h2>
+    <div class="boxes">
+      <div class="box1">
+        <h3 class="section1">Beauty</h3>
+        <img src="assets/face1.png" width="200" height="200" />
+        <a class="sectiontext"
+          >At Innovatio Design Group, we understand that beauty is more than
+          just aesthetics. It's a harmony that bridges form and function,
+          creating unforgettable experiences. Our team of design experts is
+          dedicated to crafting refined and elegant solutions that reflect the
+          latest trends and innovations. From website design to creating
+          interactive installations, our passion for beauty is evident in every
+          detail.</a
+        >
+      </div>
+      <div class="box2">
+        <h3 class="section1">Construction</h3>
+        <img src="assets/face2.png" width="200" height="200" />
+        <a class="sectiontext"
+          >Construction is not just about creating structures; it's about
+          building dreams. At Innovatio Design Group, we combine innovative
+          technologies and creative solutions to turn our clients' visions into
+          reality. Our projects are only by unmjloedkfcp quality but also by
+          durability and functionality. From commercial buildings to bespoke
+          homes, our designs are testament to our commitment to excellence in
+          construction.</a
+        >
+      </div>
+    </div>
+  </head>
+
+  <body></body>
+</html>
